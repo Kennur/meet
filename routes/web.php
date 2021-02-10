@@ -32,7 +32,7 @@ Route::get('/',function(){
 
 
 
-Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+Route::post('/logout', 'LogoutController@logout')->name('logout');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
